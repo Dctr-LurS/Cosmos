@@ -1,0 +1,232 @@
+/*Fuentes Importadas*/
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/AvenirNextCyr-Regular.ttf);
+}
+@font-face {
+    font-family: 'Starborn';
+    src: url(../fonts/starborn/Starborn.ttf);
+}
+@font-face {
+    font-family: 'Renegade';
+    src: url(../fonts/renegade_pursuit/Renegade\ Pursuit.otf);
+}
+/*Estilos Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir';
+}
+body{
+    /* background: #0f0c3f; */
+    background-image: url('../images/fondo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.page-content{
+    position: relative;
+    top: 0;
+}
+/*Estilos Titulo Transitorio*/
+.titulo-transi{
+    font-family: 'Renegade';
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    font-size: 13vw;
+    -webkit-text-stroke:1.5px black;
+    z-index: 1;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/*Estilos boton descubrir*/
+.descubrir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
+    text-decoration: none;
+    color: black;
+    font-family: 'Renegade';
+    font-size: 1.3vw;
+}
+.descubrir-p:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.descubrir:hover{
+    color: #FFE600;
+    transition: 0.5s;
+}
+.descubrir-p{
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20vw;
+    height: 4vw;
+    background-color: #FFE600;
+    border-radius: 50px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+/*Estilos de los logos de la redes sociales*/
+.en-logos{
+    color: white;
+}
+.logos{
+    width: 3.90625vw;
+    height: 3.90625vw;
+    margin-left: 10px;
+}
+.logos-redes{
+    display: flex;
+    margin-top: 290px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: end;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+/*Estilos Fondo*/
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+  }
+
+  .video-content {
+    position: relative;
+    z-index: 1;
+  }
+/*Estilos de la cabecera*/
+
+.header-fondo{
+    background-color: #474749;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.logo img{
+    width: 175px;
+    height: 125px;
+    margin-bottom: 5%;
+}
+
+/*Estilos del menu*/
+nav{
+    font-family: 'Avenir';
+    margin-right: 50px;
+    margin-left: auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-weight: 500;
+}
+nav li {
+    margin: 0 10px;
+    position: relative;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+nav ul ul li {
+    margin: 0;
+    padding: 0;
+}
+nav li:hover{
+    background-color: #333;
+    transition: 0.4s ease-in-out;
+}
+nav li:hover > ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#planetas{
+    padding: 10px 19px;
+}
+/*Estilos de las curiosidades*/
+.contenido-curiosidades{
+    margin: 20px 30px;
+    color: black;
+    line-height: 1.8;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 45%;
+    max-height: fit-content;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: justify;
+}
+#cu-visible{
+    position: relative;
+    overflow: hidden;
+}
+#cu-oculto{
+    width: fit-content;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    height: 1vw;
+    transition: 1.1s;
+}
+#cu-oculto.mostrar{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.bot-desplegar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid black;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-bot{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+}
+.con-boton{
+    margin-top: 5%;
+    position: relative;
+    bottom:-25px;
+}

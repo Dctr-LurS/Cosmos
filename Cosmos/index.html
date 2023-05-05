@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cosmos" />
+    <meta name="keywords" content="Cosmos, Planetas, Sistema Solar" />
+    <meta name="author" content="Alvaro Sanchez, Adrian Rodriguez" />
+    <link rel="stylesheet" href="./CSS/main.css">
+    <title>Cosmos - Proyecto</title>
+</head>
+<body>
+    <header class="header header-fondo header-container">
+        <div class="logo">
+            <a href="./princi.html"><img src="./images/logo.png" alt="Logo Cosmos"></a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">NOTICIAS</a></li>
+                <li>
+                    <a id="planetas" href="#">PLANETAS</a>
+                    <ul>
+                        <li><a href="#Sol">EL SOL</a></li>
+                        <li><a href="#Mercurio">MERCURIO</a></li>
+                        <li><a href="#Venus">VENUS</a></li>
+                        <li><a href="#Tierra">LA TIERRA</a></li>
+                        <li><a href="#Luna">LA LUNA</a></li>
+                        <li><a href="#Marte">MARTE</a></li>
+                        <li><a href="#Jupiter">JUPITER</a></li>
+                        <li><a href="#Neptuno">NEPTUNO</a></li>
+                        <li><a href="#Saturno">SATURNO</a></li>
+                        <li><a href="#Urano">URANO</a></li>
+                        <li><a href="#Pluton">PLUTON</a></li>
+                    </ul>
+                </li>
+                <li><a href="./formulario.html">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contenido-curiosidades">
+        <div id="cu-visible">
+        <p>El sistema solar es una pequeña parte de la Vía Láctea, nuestra galaxia. Se estima que hay alrededor de 100 mil millones de estrellas en la Vía Láctea y que el sistema solar está ubicado en uno de los brazos espirales.</p>
+        <p>El sol es una estrella clasificada como enana amarilla y tiene una temperatura superficial de alrededor de 5,500 grados Celsius. <a href="#">Ver más</a></p>
+        <p>Mercurio es el planeta más cercano al Sol y su superficie está cubierta de cráteres y rocas.<a href="#">Ver más</a></p>
+        <p>Venus es el planeta más caliente del sistema solar debido al efecto invernadero causado por su atmósfera densa y rica en dióxido de carbono.<a href="#">Ver más</a></p>
+        </div>
+        <div id="cu-oculto">
+        <p>La Tierra es el único planeta conocido por tener vida en el sistema solar. También es el único planeta con agua líquida en la superficie y una atmósfera rica en oxígeno.<a href="#">Ver más</a></p>
+        <p>Júpiter es el planeta más grande del sistema solar y tiene un gran número de lunas, incluyendo Europa, que es considerada como uno de los lugares más prometedores para buscar vida extraterrestre.<a href="#">Ver más</a></p>
+        <p>Saturno es famoso por sus anillos espectaculares, que están compuestos de hielo y roca.<a href="#">Ver más</a></p>
+        <p>Urano es un planeta con una inclinación única de su eje de rotación de casi 98 grados, lo que significa que gira prácticamente "acostado" en su órbita.<a href="#">Ver más</a></p>
+        <p>Neptuno es el planeta más alejado del Sol y es conocido por sus vientos extremadamente fuertes, que pueden alcanzar velocidades de hasta 2,100 kilómetros por hora. También tiene un sistema de anillos similar a Saturno, aunque menos impresionante.<a href="#">Ver más</a></p>
+        </div>
+        <div class="con-boton">
+        <button class="bot-desplegar mostrar" onclick="mostrarContenido()"><img class="img-bot" src="./images/flecha.png" alt="Boton Despliegue Contenido"></button>
+        </div>
+    </div>
+    <img src="./images/planetas.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Sol" title="Sol" href="#Sol" coords="0,106,1,610,53,606,103,594,149,568,181,542,213,507,234,470,248,433,258,394,261,349,254,305,242,264,226,231,197,191,155,156,101,125,60,113,29,105" shape="poly">
+        <area target="_blank" alt="Tierra" title="Tierra" href="#Tierra" coords="407,512,37" shape="circle">
+        <area target="_blank" alt="Mercurio" title="Mercurio" href="#Mercurio" coords="318,400,15" shape="circle">
+        <area target="_blank" alt="Venus" title="Venus" href="#Venus" coords="343,183,34" shape="circle">
+        <area target="_blank" alt="Marte" title="Marte" href="#Marte" coords="477,304,20" shape="circle">
+        <area target="_blank" alt="Jupiter" title="Jupiter" href="#Jupiter" coords="621,201,100" shape="circle">
+        <area target="_blank" alt="Pluton" title="Pluton" href="#Pluton" coords="957,104,24" shape="circle">
+        <area target="_blank" alt="Saturno" title="Saturno" href="#Saturno" coords="750,409,784,404,814,406,831,419,841,436,835,467,816,499,793,526,763,552,732,573,683,599,637,616,595,622,569,620,554,614,544,605,539,593,537,575,544,554,559,530,577,506,604,482,630,463,645,451,672,439,698,426,724,416" shape="poly">
+        <area target="_blank" alt="Urano" title="Urano" href="#Urano" coords="800,236,804,226,814,217,826,212,840,211,852,217,862,224,876,216,886,212,882,221,869,232,870,247,866,258,860,270,847,279,832,283,819,281,808,273,788,278,778,279,800,263,797,249" shape="poly">
+        <area target="_blank" alt="Neptuno" title="Neptuno" href="#Neptuno" coords="895,613,40" shape="circle">
+        <area target="_blank" alt="Luna" title="Luna" href="#Luna" coords="460,473,13" shape="circle">
+    </map>
+    <script src="./JavaScript/main.js"></script>
+</body>
+</html>
