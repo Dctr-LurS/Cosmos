@@ -25,91 +25,10 @@ body{
     background-repeat: no-repeat;
     color: #fff;
 }
-.page-content{
+/* .page-content{
     position: relative;
     top: 0;
-}
-/*Estilos Titulo Transitorio*/
-.titulo-transi{
-    font-family: 'Renegade';
-    display: flex;
-    margin-top: 10%;
-    justify-content: center;
-    font-size: 13vw;
-    -webkit-text-stroke:1.5px black;
-    z-index: 1;
-    color: white;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-@keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-/*Estilos boton descubrir*/
-.descubrir{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;    
-    text-decoration: none;
-    color: black;
-    font-family: 'Renegade';
-    font-size: 1.3vw;
-}
-.descubrir-p:hover{
-    background-color: black;
-    transition: 0.5s;
-}
-.descubrir:hover{
-    color: #FFE600;
-    transition: 0.5s;
-}
-.descubrir-p{
-    margin-top: 10%;
-    margin-left: 40%;
-    margin-right: 40%;
-    width: 20vw;
-    height: 4vw;
-    background-color: #FFE600;
-    border-radius: 50px;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-/*Estilos de los logos de la redes sociales*/
-.en-logos{
-    color: white;
-}
-.logos{
-    width: 3.90625vw;
-    height: 3.90625vw;
-    margin-left: 10px;
-}
-.logos-redes{
-    display: flex;
-    margin-top: 290px;
-    margin-left: 10px;
-    margin-right: 10px;
-    justify-content: end;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-/*Estilos Fondo*/
-  
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 1s ease-in-out;
-    z-index: -1;
-  }
-
-  .video-content {
-    position: relative;
-    z-index: 1;
-  }
+} */
 /*Estilos de la cabecera*/
 
 .header-fondo{
@@ -127,6 +46,7 @@ body{
 }
 
 /*Estilos del menu*/
+
 nav{
     font-family: 'Avenir';
     margin-right: 50px;
@@ -146,7 +66,10 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    padding-right: 17px;
     display: block;
 }
 nav ul ul {
@@ -177,19 +100,39 @@ nav li:hover > ul {
 #planetas{
     padding: 10px 19px;
 }
+
 /*Estilos de las curiosidades*/
+.vMas{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .contenido-curiosidades{
-    margin: 20px 30px;
+    margin: 2%;
     color: black;
     line-height: 1.8;
     font-weight: 500;
     border: 2px solid black;
     border-radius: 50px;
     width: 45%;
-    max-height: fit-content;
+    height:fit-content;
     background-color: lightgray;
     padding: 20px;
     text-align: justify;
+}
+.imagenes-cur{
+    display: flex;
+    width: 450px;
+    height: 300px;
+}
+.content-imagenes{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenido-imagenes{
+    margin-right: 3%;
 }
 #cu-visible{
     position: relative;
@@ -215,8 +158,11 @@ nav li:hover > ul {
     border: 2px solid black;
     position: absolute;
     bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+}
+.bot-desplegar:hover{
+    transform: rotate(180deg);
+    transition-duration: 1s;
 }
 .img-bot{
     align-items: center;
@@ -229,4 +175,88 @@ nav li:hover > ul {
     margin-top: 5%;
     position: relative;
     bottom:-25px;
+}
+/*Estilos para el carrusel de imagenes de los planetas*/
+.i-planetas{
+    width: 500px;
+    height: 300px;
+}
+.carrusel-i{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.conector-carrusel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease;
+}
+.imagen-carrusel{
+    flex: 1 0 100%;
+    height: 100%;
+}
+/*Estilos para el mapa interactivo de los planetas*/
+.contenido-mapa{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: black;
+    line-height: 1.5;
+    font-weight: 500;
+    border: 2px solid black;
+    width: 85%;
+    max-height: fit-content;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: justify;
+}
+.mInteractivo{
+    border-radius: 50px;
+}
+.mapa-interactivo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Estilos para las noticias*/
+.contenido-noticias-g{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenido-noticias{
+    border: 2px solid black;
+    background-color: lightgray;
+    color: black;
+    border-radius: 50px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+    margin-top: 6%;
+    width: 35%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: justify;
+}
+.contenido-noticias-i img{
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 50px;
+}
+.tit-noticia{
+    font-weight: 600;
+    font-size: 18px;
+}
+/*Estilo Pie de Pagina*/
+.pieP{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5.5vw;
+    background: linear-gradient(to bottom, transparent 5%, black 60%);
 }

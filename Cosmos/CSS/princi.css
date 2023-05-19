@@ -1,0 +1,111 @@
+/*Fuentes Importadas*/
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/AvenirNextCyr-Regular.ttf);
+}
+@font-face {
+    font-family: 'Starborn';
+    src: url(../fonts/starborn/Starborn.ttf);
+}
+@font-face {
+    font-family: 'Renegade';
+    src: url(../fonts/renegade_pursuit/Renegade\ Pursuit.otf);
+}
+/*Estilos Generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir';
+    overflow: hidden;
+}
+
+/*Estilo titulo transitorio*/
+.titulo-transi{
+    font-family: 'Renegade';
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    font-size: 13vw;
+    -webkit-text-stroke:2px black;
+    z-index: 1;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/*Estilo Boton Explora*/
+.descubrir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;    
+    text-decoration: none;
+    color: black;
+    font-family: 'Renegade';
+    font-size: 1.3vw;
+}
+.descubrir-p:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.descubrir:hover{
+    color: #FFE600;
+    transition: 0.5s;
+}
+.descubrir-p{
+    margin-top: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20vw;
+    height: 4vw;
+    background-color: #FFE600;
+    border-radius: 50px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+/*Estilo Logos Redes Sociales*/
+.en-logos{
+    color: white;
+}
+.logos{
+    width: 3.90625vw;
+    height: 3.90625vw;
+    margin-left: 0.78125vw;
+}
+.logos-redes{
+    display: flex;
+    margin-top: 22.65625vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: end;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    position: right;
+    bottom: 0;
+}
+/*Estilo para la flecha de volver en las paginas de los planetas*/
+.bot-volver{
+    width: 60px;
+    height: 60px;
+    margin-top: 2.5vw;
+    margin-left: 3vw;
+}
+/*Estilo Video Fondo*/
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+  }
+
+  .video-content {
+    position: relative;
+    z-index: 1;
+  }

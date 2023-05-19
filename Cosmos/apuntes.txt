@@ -25,3 +25,19 @@ Codigo para la otra imagen de planetas
         <area target="#Cometa" alt="Cometa" title="Cometa" href="Cometa" coords="538,36,551,30,545,24,516,41,526,44" shape="poly">
         <area target="#Pluton" alt="Pluton" title="Pluton" href="Pluton" coords="521,344,18" shape="circle">
     </map> -->
+
+--------------------------------------------------------------------------------------------------------
+Tenemos dos posibilidades, la primera es hacer una pagina para cada planeta o crear una sola pagina en la que hacer el cambio de informacion de uno a otro mediante Javascript,
+problema de la segunda opcion seria un contenido muy estatico ya que no podriamos personalizar mucho porque ralentiza bastante nuestra pagina, aumenta el tiempo de carga de
+la pagina a unos 5s de media por planeta. En cambio con pagina a pagina reducimos nuestros tiempos de carga considerablemente los 5s mencionados y algunos mas nos quitamos.
+
+En la pagina principal debemos hacer un menu de hamburguesa para resoluciones mas pequeñas
+
+Convertir todas las imagenes a WEBP
+
+Implementar lector talkback para ciegos
+
+Implementar cambio de idioma dentro de la pagina mediante botones no con el google translate
+
+Implementar un json cuando lo terminamos el proyecto para aumentar nuestra velocidad de carga, a parte de limpiar el javascript y el css.
+
