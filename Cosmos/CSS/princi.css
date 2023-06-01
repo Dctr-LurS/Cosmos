@@ -3,16 +3,19 @@
     font-family: 'Avenir';
     src: url(../fonts/AvenirNextCyr-Regular.ttf);
 }
+
 @font-face {
     font-family: 'Starborn';
     src: url(../fonts/starborn/Starborn.ttf);
 }
+
 @font-face {
     font-family: 'Renegade';
     src: url(../fonts/renegade_pursuit/Renegade\ Pursuit.otf);
 }
+
 /*Estilos Generales*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,43 +24,53 @@
 }
 
 /*Estilo titulo transitorio*/
-.titulo-transi{
+.titulo-transi {
     font-family: 'Renegade';
     display: flex;
     margin-top: 10%;
     justify-content: center;
     font-size: 13vw;
-    -webkit-text-stroke:2px black;
+    -webkit-text-stroke: 2px black;
     z-index: 1;
     color: white;
     opacity: 0;
     animation: fadeIn 1.5s ease-in-out forwards;
 }
-@keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 /*Estilo Boton Explora*/
-.descubrir{
+.descubrir {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     text-decoration: none;
     color: black;
     font-family: 'Renegade';
     font-size: 1.3vw;
 }
-.descubrir-p:hover{
+
+.descubrir-p:hover {
     background-color: black;
     transition: 0.5s;
 }
-.descubrir:hover{
+
+.descubrir:hover {
     color: #FFE600;
     transition: 0.5s;
 }
-.descubrir-p{
+
+.descubrir-p {
     margin-top: 10%;
     margin-left: 40%;
     margin-right: 40%;
@@ -67,16 +80,19 @@
     border-radius: 50px;
     animation: fadeIn 1.5s ease-in-out forwards;
 }
+
 /*Estilo Logos Redes Sociales*/
-.en-logos{
+.en-logos {
     color: white;
 }
-.logos{
+
+.logos {
     width: 3.90625vw;
     height: 3.90625vw;
     margin-left: 0.78125vw;
 }
-.logos-redes{
+
+.logos-redes {
     display: flex;
     margin-top: 22.65625vw;
     margin-left: 10px;
@@ -86,13 +102,15 @@
     position: right;
     bottom: 0;
 }
+
 /*Estilo para la flecha de volver en las paginas de los planetas*/
-.bot-volver{
+.bot-volver {
     width: 60px;
     height: 60px;
     margin-top: 2.5vw;
     margin-left: 3vw;
 }
+
 /*Estilo Video Fondo*/
 .video-background {
     position: absolute;
@@ -103,9 +121,102 @@
     object-fit: cover;
     transition: opacity 1s ease-in-out;
     z-index: -1;
-  }
+}
 
-  .video-content {
+.video-content {
     position: relative;
     z-index: 1;
-  }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+
+    .titulo-transi {
+
+        font-size: 18vw;
+    }
+
+    .descubrir-p {
+
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        margin: 50vw auto;
+
+
+    }
+
+    .descubrir {
+        font-size: large;
+        padding: 1%;
+
+    }
+
+    .logos-redes {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .en-logos {
+        width: 23%;
+        height: fit-content;
+
+    }
+
+    .logos {
+        padding: 0;
+        margin: 0;
+        height: 65%;
+        width: 65%;
+        justify-content: space-around;
+
+    }
+}
+
+
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .titulo-transi {
+
+        font-size: 18vw;
+    }
+
+    .descubrir-p {
+
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        margin: 33vw auto;
+    }
+
+    .descubrir {
+        font-size: 5vw;
+        padding: 1%;
+
+    }
+
+    .logos-redes {
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .en-logos {
+        width: 23%;
+        height: fit-content;
+
+    }
+
+    .logos {
+        padding: 0;
+        margin: 0;
+        height: 65%;
+        width: 65%;
+        justify-content: space-around;
+
+    }
+
+}
