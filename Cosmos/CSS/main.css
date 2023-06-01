@@ -357,6 +357,13 @@ nav li:hover>ul {
     .planeta h1 {
         font-size: 15vw;
     }
+    .contenido-planeta p {
+        padding: 4%;
+     }
+
+     .contenido-planeta table{
+        display: none;
+     }
 
     .content-imagenes {
         display: grid;
@@ -422,6 +429,9 @@ nav li:hover>ul {
     .content-imagenes {
         display: grid;
 
+    }
+    .planeta h1{
+        font-size: 12vw;
     }
 
     .contenido-curiosidades {
